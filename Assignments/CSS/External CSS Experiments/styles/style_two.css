@@ -1,0 +1,17 @@
+h1 {
+    background-color: blue;
+    color: aqua;
+    font-size: 60px;
+}
+
+h2 {
+    background-color: yellowgreen;
+    color: violet;
+    font-size: 40px;
+}
+
+p {
+    background-color: red;
+    color: pink;
+    font-size: 20px;
+}
