@@ -1,0 +1,24 @@
+.word {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.letter {
+    font-size: 100px;
+    text-decoration: 10px underline orangered;
+}
+
+.word_1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.letter_1 {
+    font-size: 100px;
+    text-decoration: 10px underline orangered;
+    float: left;
+
+}
