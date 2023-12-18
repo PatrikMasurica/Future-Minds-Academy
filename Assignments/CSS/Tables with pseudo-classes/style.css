@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width: 20vw;
+    height: 40vh;
+}
+
+tr {
+    border-bottom: 1px solid white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(20, 94, 10);
+}
+
+tr:nth-child(even) {
+    background-color: green;
+}
+
+td:nth-child(n+1) {
+    color: white;
+}
