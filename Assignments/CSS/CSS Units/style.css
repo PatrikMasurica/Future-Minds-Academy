@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body h1 {
+    text-decoration: underline;
+}
+
+body div {
+    height: 25vh;
+}
+
+
+body div:nth-child(odd) {
+    background-color: grey;
+}
+
+body div:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+.firstCard h1 {
+    font-size: 4em;
+}
+
+.firstCard p {
+    font-size: 1em;
+}
+
+.firstCard hr {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 33%;
+    background-color: red;
+    border: none;
+    height: 2px;
+}
+
+.secondCard h1 {
+    font-size: 3em;
+}
+
+.secondCard p {
+    font-size: 1em;
+}
+
+.secondCard hr {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 33%;
+    background-color: red;
+    border: none;
+    height: 2px;
+}
+
+.thirdCard h1 {
+    font-size: 2em;
+}
+
+.thirdCard p {
+    font-size: 1em;
+}
+
+.thirdCard hr {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 33%;
+    background-color: red;
+    border: none;
+    height: 2px;
+}
+
+.fourthCard h1 {
+    font-size: 1em;
+}
+
+.fourthCard p {
+    font-size: 1em;
+}
+
+.fourthCard hr {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    width: 33%;
+    background-color: red;
+    border: none;
+    height: 2px;
+}
