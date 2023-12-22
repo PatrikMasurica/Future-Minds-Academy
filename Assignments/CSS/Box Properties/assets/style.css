@@ -1,0 +1,16 @@
+body {
+    background-color: orange;
+}
+
+img {
+    float: left;
+    margin: 10px;
+    width: 300px;
+}
+
+img:hover {
+    border: 5px dotted red;
+    width: 310px;
+    padding: 5px;
+    cursor: pointer;
+}
