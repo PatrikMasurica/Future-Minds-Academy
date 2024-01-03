@@ -1,0 +1,79 @@
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.dInline {
+    display: inline;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.textRed {
+    color: red;
+}
+
+.textWhite {
+    color: white
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.bRadius {
+    border-radius: 10px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+
+.marginX10 {
+    margin: 0 10%;
+}
+
+.bgYellow {
+    background-color: yellow;
+}
+
+.bgYellow:hover {
+    background-color: rgb(153, 153, 4);
+}
+
+.bgGreen {
+    background-color: green;
+}
+
+.bgGreen:hover {
+    background-color: rgb(0, 85, 0);
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.bgRed:hover {
+    background-color: rgb(151, 27, 27);
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.bgBlue:hover {
+    background-color: rgb(13, 22, 124);
+}
