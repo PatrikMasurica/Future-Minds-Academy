@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+}
+
+.leftAside {
+    background-color: yellow;
+}
+
+main {
+    background-color: green;
+}
+
+.rightAside {
+    background-color: aqua;
+}
+
+footer {
+    background-color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+div {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+section {
+    background-color: gray;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+}
