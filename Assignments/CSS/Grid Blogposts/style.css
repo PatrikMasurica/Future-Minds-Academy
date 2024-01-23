@@ -4,7 +4,7 @@ body {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr;
 
 }
@@ -51,12 +51,14 @@ span {
 aside {
     background-color: grey;
     height: 100vh;
-    width: 20vw;
+
     align-items: end;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 50px 50px;
     text-align: end;
-    flex-direction: column;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     padding-right: 30px;
 }
 
@@ -82,6 +84,8 @@ aside button {
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 1fr 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -90,5 +94,5 @@ aside button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    grid-column-start: 2;
+
 }
