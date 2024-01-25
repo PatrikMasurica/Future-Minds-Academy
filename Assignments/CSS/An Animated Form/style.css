@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+p {
+    visibility: hidden;
+    color: white;
+}
+
+input:focus+p {
+    visibility: visible;
+}
+
+form input {
+    height: 40px;
+
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spinner_6kVp {
+    transform-origin: center;
+    animation: spinner_irSm .75s infinite linear
+}
+
+@keyframes spinner_irSm {
+    100% {
+        transform: rotate(360deg)
+    }
+}
