@@ -1,45 +1,57 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    padding: 10px;
-    margin: 10px;
     background-color: gray;
+    padding: 40px;
+    gap: 5px;
 }
 
-p {
+label {
     visibility: hidden;
-    color: white;
+    transition: transform, 0.5s linear;
+    transform: translateY(5px);
 }
 
-input:focus+p {
+input:focus+label {
     visibility: visible;
-}
-
-form input {
-    height: 40px;
-
-}
-
-form button {
-    width: 100px;
-    height: 30px;
-    background-color: blue;
-    color: white;
+    transform: translateY(0px);
 }
 
 div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.spinner_6kVp {
-    transform-origin: center;
-    animation: spinner_irSm .75s infinite linear
+button {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
 }
 
-@keyframes spinner_irSm {
-    100% {
-        transform: rotate(360deg)
+img {
+    width: 100px;
+    height: 70px;
+    transform: rotate(360deg);
+    animation: patrik 1s infinite linear;
+
+}
+
+@keyframes patrik {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
