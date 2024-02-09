@@ -20,9 +20,9 @@
         </div>
         <!-- Aside Name -->
         <hr>
-        <div class="asideList asideListName">
+        <div class="asideList alignCenter">
             <figure>
-                <img class="asideListImg" src="./assets/images/avatar.jpg" alt="avatar">
+                <img class=" asideListImg" src="./assets/images/avatar.jpg" alt="avatar">
             </figure>
             <p>Patrik Masurica</p>
             <figure>
@@ -125,35 +125,50 @@
     </aside>
 
     <!-- HEADER AND MAIN -->
-    <div class="rightSide">
-        <header>
-            <div class="headerDashboard">
-                <figure>
-                    <img class="headerDashboardImg" src="./assets/icons/header/more.svg" alt="More">
-                </figure>
-                <p>Dashboard</p>
+    <div class="rightSide padding10">
+        <header class="dFlex  spaceBetween ">
+            <div class="headerDashboard dFlex ">
+                <div class="openDashboard dFlex alignCenter spaceBetween gap2">
+                    <figure>
+                        <img class="rounded" src=" ./assets/icons/header/more.svg" alt="More">
+                    </figure>
+                    <p>Dashboard</p>
+                </div>
+
             </div>
-            <div class="rightDashboard">
-                <input class="searchBar" type="text" placeholder="Search">
-                <figure>
-                    <img class="headerDashboardImg" src="./assets/icons/header/search.svg" alt="Search">
-                </figure>
-                <img src="./assets/icons/header/headerDashboard.svg" alt="Dashboard">
-                <img src="./assets/icons/header/notifications.svg" alt="Notifications">
-                <img src="./assets/icons/header/headerAvatar.svg" alt="Avatar">
+            <div class="rightDashboard dFlex alignCenter justifyContent gap2">
+                <input title="Search" class="searchBar" id="searchBar" placeholder="Search">
+                <label title="Search" for="searchBar">
+                    <img class="rounded" src="./assets/icons/header/search.svg" alt="Search">
+                </label>
+                <img title="Dashboard" src="./assets/icons/header/headerDashboard.svg" alt="Dashboard">
+                <div class="notificationIcon">
+                    <img title="Notifications" class="notificationsImg" src="./assets/icons/header/notifications.svg"
+                        alt="Notifications">
+                    <p class="notification dFlex justifyContent alignCenter colorWhite">5</p>
+                    <div class="openNotification">
+                        <p class="onHover padding10">Patrik Masurica sent you a message</p>
+                        <p class="onHover padding10">Someone else liked your content</p>
+                        <p class="onHover padding10">Someone else liked your content</p>
+                        <p class="onHover padding10">Someone else liked your content</p>
+                        <p class="onHover padding10">Someone else liked your content</p>
+                    </div>
+                </div>
+                <img title="Avatar" src="./assets/icons/header/headerAvatar.svg" alt="Avatar">
             </div>
         </header>
-        <main>
-            <div class="card firstCard">
+        <!-- Main -->
+        <main class="padding10">
+            <div class="card dFlex spaceBetween padding10 ">
                 <div>
-                    <div class="cardTitle">
+                    <div class="dFlex gap2 padding10">
                         <figure>
-                            <img class="cardFigure" src="./assets/icons/cards/language.svg" alt="Global">
+                            <img class="cardFigure bgGreen" src="./assets/icons/cards/language.svg" alt="Global">
                         </figure>
-                        <h2 class="titleGlobal">Global Sales by Top Locations</h2>
+                        <h2>Global Sales by Top Locations</h2>
                     </div>
                     <!-- Flag List -->
-                    <div class="list">
+                    <div class=" padding10">
                         <!-- USA -->
                         <div class="flagList">
                             <figure>
@@ -162,6 +177,7 @@
                             <p>USA</p>
                             <p>2920</p>
                             <p>53.23%</p>
+
                         </div>
                         <!-- Germany -->
                         <div class="flagList">
@@ -201,40 +217,161 @@
                 </div>
 
                 <div>
-                    <iframe class="iFrame paddingY100X10"
+                    <iframe class="iFrame "
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47094.33722729428!2d21.446244899718895!3d42.46186414368257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d28fe87b91d%3A0xab45b8a9d06a705!2sGjilan!5e0!3m2!1sen!2s!4v1707045835072!5m2!1sen!2s"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <!-- Little Cards -->
-            <div class="littleCards secondCard">
+
+            <div class="littleCards  gap2 ">
                 <!-- Booking -->
                 <div class="card">
-
-                    <figure>
-                        <img src="./assets/icons/cards/couch.svg" alt="couch">
-                    </figure>
-                    <div class="statistics">
+                    <div class="dFlex spaceBetween padding10">
+                        <figure>
+                            <img class="cardFigure bgYellow" src="./assets/icons/cards/couch.svg" alt="couch">
+                        </figure>
                         <p>Booking</p>
-                        <h2>184</h2>
                     </div>
-                    <img src="./assets/icons/cards/warning.svg" alt="Warning">
-                    <p>Get more space</p>
+                    <h2 class="textAlign">184</h2>
+                    <hr>
+                    <div class="dFlex alignCenter padding10">
+                        <img src="./assets/icons/cards/warning.svg" alt="Warning">
+                        <p>Get more space</p>
+                    </div>
                 </div>
+
+
                 <!-- Website Visits -->
                 <div class="card">
-                    <figure>
-                        <img src="./assets/icons/cards/view.svg" alt="View">
+                    <div class="dFlex spaceBetween padding10">
+                        <figure>
+                            <img class="cardFigure bgViolet" src="./assets/icons/cards/equalizer.svg" alt="View">
+                        </figure>
+                        <p>Website Visits</p>
+                    </div>
+                    <h2 class="textAlign">75,521</h2>
+                    <hr>
+                    <div class="dFlex alignCenter padding10">
+                        <img src="./assets/icons/cards/tracked.svg" alt="tracked">
+                        <p>Tracked from Google Analytics</p>
+                    </div>
+                </div>
+
+                <!-- Revenue -->
+                <div class="card">
+                    <div class="dFlex spaceBetween padding10">
+                        <figure>
+                            <img class="cardFigure bgGreen" src="./assets/icons/cards/storefront.svg" alt="StoreFront">
+                        </figure>
+                        <p class="statistics">Revenue</p>
+                    </div>
+
+                    <h2 class="textAlign">$34,245</h2>
+                    <hr>
+                    <div class="dFlex alignCenter padding10">
+                        <img src="./assets/icons/cards/calendar.svg" alt="Calendar">
+                        <p>Last 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="dFlex spaceBetween padding10">
+                        <figure>
+                            <img class="cardFigure bgBlue" src="./assets/icons/cards/public.svg" alt="Public">
+                        </figure>
+                        <p>Followers</p>
+                    </div>
+                    <h2 class=" textAlign">+245</h2>
+                    <hr>
+                    <div class="dFlex alignCenter padding10">
+                        <img src=" ./assets/icons/cards/update.svg" alt="Update">
+                        <p>Just Updated</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Manage Listing -->
+            <h1 class="padding10 marginTop ">Manage Listing</h1>
+            <div class="manageList dFlex gap2 spaceAround paddingTop marginTop">
+
+                <div class=" card width">
+                    <img class="card padding10  " width="290px" src="./assets/images/card-1.jpeg" alt="">
                     </figure>
-                    <p class="statistics">Website Visits</p>
-                    <h2 class="statistics">75,521</h2>
-                    <img src="./assets/icons/cards/tracked.svg" alt="tracked">
-                    <p>Tracked from Google Analytics</p>
+                    <p class="padding10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus
+                        commodi, deserunt,
+                        dolore corrupti expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae,
+                        esse magni mollitia libero commodi impedit dolore facilis ipsa ex corrupti obcaecati. Amet
+                        obcaecati sapiente nulla, laudantium eos cupiditate ratione. </p>
+                    <hr>
+                    <div class="dFlex padding10 spaceBetween">
+                        <h3>$899/night</h3>
+                        <div class="dFlex">
+                            <figure>
+                                <img src="./assets/icons/cards/location.svg" alt="Location">
+                            </figure>
+                            <p>Barcelona,Spain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card width">
+                    <figure>
+                        <img class="card padding10" width="280px" src="./assets/images/card-1.jpeg" alt="">
+                    </figure>
+                    <p class="padding10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus
+                        commodi, deserunt,
+                        dolore corrupti expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae,
+                        esse magni mollitia libero commodi impedit dolore facilis ipsa ex corrupti obcaecati. Amet
+                        obcaecati sapiente nulla, laudantium eos cupiditate ratione. </p>
+                    <hr>
+                    <div class="dFlex padding10 spaceBetween">
+                        <h3>$899/night</h3>
+                        <div class="dFlex">
+                            <figure>
+                                <img src="./assets/icons/cards/location.svg" alt="Location">
+                            </figure>
+                            <p>Barcelona,Spain</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card width">
+                    <figure>
+                        <img class="card padding10" width="280px" src="./assets/images/card-1.jpeg" alt="">
+                    </figure>
+                    <p class="padding10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus
+                        commodi, deserunt,
+                        dolore corrupti expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae,
+                        esse magni mollitia libero commodi impedit dolore facilis ipsa ex corrupti obcaecati. Amet
+                        obcaecati sapiente nulla, laudantium eos cupiditate ratione. </p>
+                    <hr>
+                    <div class="dFlex padding10 spaceBetween">
+                        <h3>$899/night</h3>
+                        <div class="dFlex">
+                            <figure>
+                                <img src="./assets/icons/cards/location.svg" alt="Location">
+                            </figure>
+                            <p>Barcelona,Spain</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </main>
+        <hr>
+        <footer class="dFlex spaceBetween marginTop paddingTop">
+
+            <div class="dFlex gap2">
+                <h2>HOME</h2>
+                <h2>COMPANY</h2>
+                <h2>PORTFOLIO</h2>
+                <h2> BLOG</h2>
+
+            </div>
+            <h2>PATRIK MASURICA,2024 Gjilan.</h2>
+        </footer>
     </div>
 
 </body>
