@@ -188,9 +188,6 @@ header {
     color: white;
 }
 
-
-
-
 /* Card */
 .card {
     border-radius: 20px;
@@ -224,11 +221,47 @@ iFrame {
     width: 40px;
 }
 
-
-
 .littleCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 2rem;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.img {
+    position: relative;
+    top: -20px;
+    left: 10px;
+    transition: top 0.5s ease-in-out;
+}
+
+.img:hover {
+    top: -40px;
+
+}
+
+@media(max-width:820px) {
+
+    aside,
+    .rightDashboard {
+        display: none;
+    }
+
+    .littleCards {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .card,
+    .manageList {
+        flex-direction: column;
+        width: 700px
+    }
+
+
 }
