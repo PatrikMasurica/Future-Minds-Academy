@@ -8,6 +8,9 @@
 body {
     display: grid;
     grid-template-columns: auto 1fr;
+    overflow: hidden;
+    height: 100vh;
+
 }
 
 aside {
@@ -15,6 +18,7 @@ aside {
     background-blend-mode: color;
     background-color: rgb(0, 0, 0, 0.7);
     height: 100vh;
+    overflow-y: scroll;
 }
 
 .asideListTitle {
@@ -36,6 +40,7 @@ aside {
     padding: 10px 20px;
     margin: 10px 10px;
     color: white;
+
 }
 
 .active {
@@ -92,6 +97,7 @@ aside {
 /* Right Side */
 .rightSide {
     background-color: lightgray;
+    overflow-y: scroll;
 }
 
 .gap2 {
@@ -195,6 +201,11 @@ header {
     position: relative;
 }
 
+.bigCard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 .cardFigure {
     position: absolute;
     top: -20px;
@@ -213,7 +224,7 @@ header {
 }
 
 iFrame {
-    width: 700px;
+    width: 100%;
     height: 300px;
 }
 
@@ -224,7 +235,6 @@ iFrame {
 .littleCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     padding-top: 2rem;
 }
 
@@ -239,10 +249,24 @@ iFrame {
     transition: top 0.5s ease-in-out;
 }
 
-.img:hover {
+.underImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -45px;
+    visibility: hidden;
+}
+
+.containerImg:hover .img {
     top: -40px;
 
 }
+
+.containerImg:hover .underImg {
+    visibility: visible;
+}
+
 
 @media(max-width:820px) {
 
@@ -251,17 +275,11 @@ iFrame {
         display: none;
     }
 
-    .littleCards {
+    /* .littleCards {
         grid-template-columns: 1fr;
-    }
+    } */
 
 
-
-    .card,
-    .manageList {
-        flex-direction: column;
-        width: 700px
-    }
 
 
 }
