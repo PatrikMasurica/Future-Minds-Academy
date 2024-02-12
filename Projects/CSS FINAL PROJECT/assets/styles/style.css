@@ -279,9 +279,8 @@ iFrame {
         grid-template-columns: 1fr;
     }
 
-    .headerDashboard {
-
-        justify-content: space-between;
+    .manageList {
+        flex-direction: column;
     }
 }
 
