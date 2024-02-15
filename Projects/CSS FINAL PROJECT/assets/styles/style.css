@@ -10,7 +10,6 @@ body {
     grid-template-columns: auto 1fr;
     overflow: hidden;
     height: 100vh;
-
 }
 
 aside {
@@ -40,7 +39,6 @@ aside {
     padding: 10px 20px;
     margin: 10px 10px;
     color: white;
-
 }
 
 .active {
@@ -230,7 +228,6 @@ header {
     border-bottom: 1px solid gray;
 }
 
-
 /* FlagList */
 .flagList {
     grid-template-columns: repeat(4, 1fr);
@@ -260,7 +257,6 @@ header {
     top: -20px;
     border-radius: 10px;
     transition: top 0.5s ease-in-out;
-
 }
 
 .underImg {
@@ -270,7 +266,6 @@ header {
 
 .containerImg:hover .img {
     top: -40px;
-
 }
 
 /* footer */
