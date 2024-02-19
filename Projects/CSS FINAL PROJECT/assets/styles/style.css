@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root {
+    --white: #fff9f9;
+    --red: #f42626;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Kalnia:wght@100&family=Roboto&display=swap');
 
 body {
@@ -38,11 +43,11 @@ aside {
     gap: 10px;
     padding: 10px 20px;
     margin: 10px 10px;
-    color: white;
+    color: var(--white);
 }
 
 .active {
-    background-color: red;
+    background-color: var(--red);
     border-radius: 10px;
 }
 
@@ -119,11 +124,11 @@ aside {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .colorWhite {
-    color: white;
+    color: var(--white);
 }
 
 .bgGreen {
@@ -164,7 +169,7 @@ header {
 }
 
 .searchBar:focus {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--red);
     transition: border-bottom 0.7s ease-in;
 }
 
@@ -173,9 +178,9 @@ header {
 }
 
 .notification {
-    background-color: red;
+    background-color: var(--red);
     width: 15px;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     border-radius: 50%;
     position: absolute;
     top: -5px;
@@ -190,7 +195,7 @@ header {
     border: 0px solid black;
     top: 15px;
     right: 20px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .notificationIcon:hover .openNotification {
@@ -199,7 +204,7 @@ header {
 }
 
 .onHover:hover {
-    background-color: red;
+    background-color: var(--red);
     border-radius: 3px;
     color: white;
 }
@@ -207,7 +212,7 @@ header {
 /* Card */
 .card {
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--white);
     position: relative;
 }
 
