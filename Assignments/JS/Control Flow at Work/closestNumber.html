@@ -36,11 +36,11 @@
         }
 
         #player-1::before {
-            content: Player 1;
+            content: "Player 1";
         }
 
         #player-2::before {
-            content: Player 2;
+            content: "Player 2";
         }
     </style>
 </head>
@@ -53,38 +53,36 @@
         <div class="player-answer" id="player-2"></div>
     </div>
 
-
-
-
     <script>
         let random = Math.floor(Math.random() * 20) + 1;
 
         let playerOne = parseInt(prompt("Player 1"));
         let playerTwo = parseInt(prompt("Player 2"));
 
-        //validation
-        if (isNaN(playerOne) || isNaN(playerTwo || playerOne < 0 || playerOne > 20 || playerTwo < 0 || playerTwo > 20)) {
-            throw new Error('Invalid input!!!')
+        // Validation
+        if (isNaN(playerOne) || isNaN(playerTwo) || playerOne < 0 || playerOne > 20 || playerTwo < 0 || playerTwo > 20) {
+            throw new Error('Invalid input!!!');
         }
 
-        //logic
+        // Logic
         let playerOneDistance = Math.abs(random - playerOne);
-        let playerTwoDistance = Math.abs(random - playerTwo)
+        let playerTwoDistance = Math.abs(random - playerTwo);
 
-        alert(`Correct answer is ${random}`)
-
+        let winner;
         if (playerOneDistance < playerTwoDistance) {
-            alert('Player 1 wins');
+            winner = 'Player 1';
         } else if (playerTwoDistance < playerOneDistance) {
-            alert('Player 2 wins');
+            winner = 'Player 2';
         } else {
-            alert('It is a tie!');
+            winner = 'Tie';
         }
 
+        // Displaying result in HTML
         document.getElementById('answer').textContent = `The correct answer is ${random}`;
-        document.getElementById('player-1').textContent = playerOne;
-        document.getElementById('player-2').textContent = playerTwo;
+        document.getElementById('player-1').textContent = `: ${playerOne}`;
+        document.getElementById('player-2').textContent = `: ${playerTwo}`;
 
+        // Highlighting winner
         if (winner === 'Player 1') {
             document.getElementById('player-1').style.backgroundColor = 'green';
             document.getElementById('player-2').style.backgroundColor = 'red';
