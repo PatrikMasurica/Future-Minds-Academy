@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let random = Math.floor(Math.random() * 6) + 1;
+        let input;
+        let counter = 0;
+
+        do {
+            input = parseInt(prompt('Qello numrin;'));
+            counter++;
+
+        }
+        while (random !== input)
+
+
+        if (counter === 1) {
+            alert(`Numri i sakte ishte ${random} dhe ti tentove ${counter} her`);
+        } else {
+            alert(`Numri i sakte ishte ${random} dhe ti tentove ${counter} here`);
+        }
+
+        //alert(`numri i sakte ishte ${} dhe ti tentove ${} ${counter===1? 'her':'here'}`)
+
+    </script>
+</body>
+
+</html>
