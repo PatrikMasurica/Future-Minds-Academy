@@ -14,18 +14,21 @@
         let counter = 0;
         let attempts = 3;
 
-        while (userInput !== '12341234' && counter < 3) {
+        do {
             userInput = prompt('Type the password:');
             counter++;
             attempts--;
         }
+
+        while (userInput !== '12341234' && counter < 3);
+
 
         if (userInput === '12341234') {
             alert('Success!!')
         } else {
             alert(`Incorrect password.You have ${attempts} ${counter === 1 ? 'try' : 'tries'} left!`)
         }
-        console.log(attempts)
+
     </script>
 </body>
 
