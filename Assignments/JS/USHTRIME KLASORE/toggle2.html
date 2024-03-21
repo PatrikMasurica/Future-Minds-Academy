@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Me</title>
+    <style>
+        .card {
+            width: 400px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Welcome to my card</h1>
+        <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            alt="cat" width="300">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, exercitationem.</p>
+    </div>
+
+    <a href="javascript: hideShowMe();">Hide Me</a>
+
+    <script>
+        const card = document.querySelector('.card');
+        const a = document.querySelector('a');
+
+        let state = true;
+
+        function hideShowMe() {
+
+
+            if (state) {
+                card.style.visibility = 'hidden'
+                a.innerHTML = 'Show Me';
+                state = false;
+            } else {
+                card.style.visibility = 'visible';
+                a.innerHTML = 'Hide Me';
+                state = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
