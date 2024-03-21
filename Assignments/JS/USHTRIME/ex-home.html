@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Excercise</title>
+    <style>
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .hideMe {
+            visibility: hidden;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
+        .left {
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="left" href="javascript: leftMe()">Left</a>
+    <a class="hide" href=" javascript: hideMe()">Hide Me</a>
+    <a class="right" href=" javascript: rightMe()">Right</a>
+
+    <div class="card">
+        <img width="400"
+            src="https://cityfurnish.com/blog/wp-content/uploads/2023/07/living-room-filled-with-furniture-red-wall-generative-ai-image-min.jpg"
+            alt="Home">
+    </div>
+
+
+    <script>
+        let card = document.querySelector('.card');
+        let left = document.querySelector('.left');
+        let hide = document.querySelector('.hide');
+        let right = document.querySelector('.right');
+
+        let state = true;
+
+        function hideMe() {
+
+            if (state) {
+                card.classList.add('hideMe');
+                hide.innerHTML = 'Show Me Please';
+                state = false;
+            } else {
+                card.classList.remove('hideMe');
+                hide.innerHTML = 'Hide Me';
+                state = true
+            }
+        }
+
+        function rightMe() {
+
+            if (state) {
+                card.classList.add('right');
+                right.innerHTML = 'Center Me';
+                state = false;
+            } else {
+                card.classList.remove('right');
+                right.innerHTML = 'Right';
+                state = true
+            }
+
+        }
+        function leftMe() {
+
+            if (state) {
+                card.classList.add('left');
+                left.innerHTML = 'Center Me';
+                state = false;
+            } else {
+                card.classList.remove('left');
+                left.innerHTML = 'Left';
+                state = true;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
