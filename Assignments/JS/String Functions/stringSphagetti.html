@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Sphagetti</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //first
+        let originalString = '     hello, dolly! ';
+
+        let firstLetter = originalString.trim()[0];
+        let firstLetterUppercase = firstLetter.toUpperCase();
+        console.log(firstLetterUppercase);
+
+        //second
+        let timeString = '05:36 PM';
+
+        let [timePart, period] = timeString.split(' ');
+        let [hours, minutes] = timePart.split(':');
+
+        console.log("Hours:", hours);
+        console.log("Minutes:", minutes);
+        console.log("Period:", period);
+
+        //third
+        let temperatureString = "New York, 15°C";
+
+        let [city, temperaturePart] = temperatureString.split(', ');
+        let temperature = parseInt(temperaturePart);
+
+        console.log("City:", city);
+        console.log("Temperature:", temperature);
+
+
+    </script>
+</body>
+
+</html>
