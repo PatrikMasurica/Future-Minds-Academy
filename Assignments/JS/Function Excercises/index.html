@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Excercises</title>
+</head>
+
+<body>
+
+    <script>
+        //First
+        let helloWorld = () => {
+            console.log("Hello World!")
+        }
+        for (let i = 1; i <= 10; i++) {
+            helloWorld()
+        }
+
+        //Second
+        let returnMessage = (message) => {
+            console.log(message);
+        }
+        returnMessage('Patrik Masurica');
+
+        //Third
+        let kilometersToMiles = (km) => {
+            let mile = km * 0.621371;
+            return mile;
+            console.log(`${mile} miles.`)
+        }
+
+        console.log(kilometersToMiles(30));
+
+        //Fourth
+        function calculateCircleArea(radius) {
+            const pi = Math.PI;
+            const area = pi * radius * radius;
+            return area;
+        }
+
+        console.log(calculateCircleArea(2));
+
+        //Fifth
+        function nameSurname(name, surname) {
+            console.log(`Welcome ${name} ${surname}`)
+        }
+
+        nameSurname('Filan', 'Fisteku');
+
+        //Sixth
+        function isWorkingCitizen(age) {
+            //let input=prompt('Whats your age?')
+
+            if (age > 18 && age < 65) {
+                console.log("You are a working citizen");
+            } else {
+                console.log("You cant work");
+            }
+
+        }
+
+        isWorkingCitizen(29);
+        isWorkingCitizen(67);
+
+        //Seventh
+        function isEvenOrOdd(number) {
+            if (number % 2 === 0) {
+                return "even";
+            } else {
+                return "odd";
+            }
+        }
+
+        console.log(isEvenOrOdd(2));
+        console.log(isEvenOrOdd(5));
+
+    </script>
+</body>
+
+</html>
