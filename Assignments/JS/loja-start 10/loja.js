@@ -6,6 +6,9 @@ document.body.appendChild(rrafshi);
 const ctx = rrafshi.getContext('2d');
 
 let points = 0;
+let ticker = 20;
+let gameOver = false;
+let winPt = 2;
 
 let bgrReady = false;
 let bgrImg = new Image();
@@ -86,14 +89,35 @@ let render = function () {
         maca.y < (miu.y + miu.height)
     ) {
         miuPosition();
-        points++;
+        if (ticker != 0) { points++; }
+
     }
 
     ctx.font = '20px serif';
     ctx.fillStyle = 'white';
     ctx.fillText('Points: ' + points, 20, 30);
+    ctx.fillText('Timer: ' + ticker, 400, 30);
+
+
+
+
+    if (gameOver) {
+        if (points >= winPt) {
+            ctx.fillText('YOU WIN!', 200, 30);
+        } else {
+            ctx.fillText('YOU LOSE!', 200, 30);
+        }
+    }
 
 }
 
-miuPosition();
-setInterval(render, 10);
+let startTimer = function () {
+    if (ticker != 0) { ticker--; } else { gameOver = true; }
+
+}
+
+
+
+
+let renderInterval = setInterval(render, 10);
+let timerInterval = setInterval(startTimer, 1000);
