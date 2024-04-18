@@ -42,7 +42,7 @@ function loadQuestion(index) {
     que_text.innerHTML = questions[index].question;
 
     for (let i = 0; i < allOptions.length; i++) {
-        option_list.innerHTML += `<div class="option" onclick="optionSelect(this)"><span>${allOptions[i]}</span ></div > `;
+        option_list.innerHTML += `<div class="option" onclick="optionSelect(this,${index},${i})"><span>${allOptions[i]}</span ></div > `;
     }
 
     let timerInterval = setInterval(timerCount, 1000);
@@ -63,17 +63,24 @@ let timerCount = function () {
     }
 }
 
-let optionSelect = function (opt) {
+let optionSelect = function (opt, q, o) {
+
+    for (let i = 0; i < 4; i++) {
+
+        if (questions[q].options[i] == questions[q].answer) {
+            option_list.children[i].classList.add("correct");
+        }
+        option_list.children[i].classList.add("disabled");
+
+    }
+    if (questions[q].options[o] != questions[q].answer) {
+        opt.classList.add("incorrect");
+
+    }
+
 
     next_btn.classList.add('show');
     total_que.innerHTML = '1/6 question';
 
-    let answer = "Hyper Text Markup Language";
-
-    if (option == answer) {
-        option.classList.add('correct');
-    } else {
-        option.classList.add('wrong')
-    }
 }
 
