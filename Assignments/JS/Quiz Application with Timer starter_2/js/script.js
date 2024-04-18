@@ -13,6 +13,7 @@ const total_que = document.querySelector('.total_que');
 
 
 
+
 let timer = 15;
 let lineTimer = 0;
 
@@ -67,5 +68,12 @@ let optionSelect = function (opt) {
     next_btn.classList.add('show');
     total_que.innerHTML = '1/6 question';
 
+    let answer = "Hyper Text Markup Language";
 
+    if (option == answer) {
+        option.classList.add('correct');
+    } else {
+        option.classList.add('wrong')
+    }
 }
+
