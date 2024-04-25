@@ -12,6 +12,7 @@ const next_btn = document.querySelector('.next_btn');
 const total_que = document.querySelector('.total_que');
 const result_box = document.querySelector('.result_box');
 const score_text = document.querySelector('.score_text');
+const restart = document.querySelector('#restart');
 
 let timerInterval;
 
@@ -73,12 +74,15 @@ let optionSelect = function (opt, q, o) {
 
         if (questions[q].options[i] == questions[q].answer) {
             option_list.children[i].classList.add("correct");
-            points++;
-
         }
         option_list.children[i].classList.add("disabled");
 
     }
+
+    if (questions[q].options[o] == questions[q].answer) {
+        points++;
+    }
+
     if (questions[q].options[o] != questions[q].answer) {
         opt.classList.add("incorrect");
 
@@ -102,6 +106,8 @@ next_btn.addEventListener('click', function () {
     resetAllQuestions();
 })
 
+
+
 let resetAllQuestions = function () {
 
     timer_sec.textContent = 15;
@@ -113,3 +119,6 @@ let resetAllQuestions = function () {
 
 }
 
+restart.addEventListener('click', function () {
+    window.location.reload();
+});
