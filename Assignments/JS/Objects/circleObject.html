@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let circle = {
+            radius: 4,
+            getArea: function (r) { return 3.14 * r * r },
+            getParameter: function (r) { return 2 * Math.PI * r }
+        }
+        console.log("Radius: " + circle.radius);
+        console.log("Area: " + Math.floor(circle.getArea(circle.radius)));
+        console.log("Perimeter: " + circle.getParameter(circle.radius));
+
+    </script>
+</body>
+
+</html>
