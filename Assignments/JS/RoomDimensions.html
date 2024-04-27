@@ -17,14 +17,15 @@
 </head>
 
 <body>
-    <label for="">Room Width</label>
+    <label for="roomW">Room Width</label>
     <input type="number" name="" id="roomW">
     <br>
-    <label for="">Room Height</label>
+    <label for="roomH">Room Height</label>
     <input type="number" name="" id="roomH">
 
     <br><br>
-    <button id="drawBtn">Draw Room</button>
+    <button id="drawbtn">Draw Room</button>
+    <br>
 
     <div class="canvas">
 
@@ -34,11 +35,11 @@
         const roomW = document.querySelector('#roomW');
         const roomH = document.querySelector('#roomW');
         const canvas = document.querySelector('.canvas');
-        const drawBtn = document.querySelector('.#drawBtn');
+        const drawBtn = document.querySelector('#drawbtn');
 
         drawBtn.addEventListener('click', function () {
-            canvas.style.width = roomW.value;
-            canvas.style.width = roomH.value;
+            canvas.style.width = roomW.value + "px";
+            canvas.style.height = roomH.value + "px";
             canvas.style.backgroundColor = '#fff0000';
 
         })
