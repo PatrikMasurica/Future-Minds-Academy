@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body {
+            background-color: aqua;
+            font-size: 2rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="date">
+
+    </div><br>
+    <ul class="tasks">
+
+    </ul>
+
+    <script>
+        let date = document.querySelector('.date');
+        let tasks = document.querySelector('.tasks');
+        let userInput = prompt('Whats your tasks?')
+
+        function getCurrentDate() {
+            const currentDate = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return currentDate.toLocaleDateString('en-US', options);
+        }
+
+
+        if (!userInput) { date.textContent = getCurrentDate(); tasks.textContent = ''; } else {
+
+            date.textContent = getCurrentDate();
+            tasks.textContent += userInput;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
