@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Textbox</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textbox {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+            background-color: black;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" class="textbox" contenteditable="true" id="textbox" placeholder="Start typing"></div>
+
+    <script>
+        const Textbox = document.getElementById('textbox');
+
+        Textbox.addEventListener('key', function (event) {
+            event.preventDefault();
+            Textbox.innerText += event.key;
+        });
+    </script>
+
+</body>
+
+</html>
