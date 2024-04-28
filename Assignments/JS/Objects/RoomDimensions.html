@@ -28,7 +28,9 @@
     <br>
 
     <div class="canvas">
+        <div class="text">
 
+        </div>
     </div>
 
     <script>
@@ -36,12 +38,12 @@
         const roomH = document.querySelector('#roomW');
         const canvas = document.querySelector('.canvas');
         const drawBtn = document.querySelector('#drawbtn');
+        const text = document.querySelector('.text');
 
         drawBtn.addEventListener('click', function () {
             canvas.style.width = roomW.value + "px";
             canvas.style.height = roomH.value + "px";
             canvas.style.backgroundColor = '#fff0000';
-
         })
 
 
