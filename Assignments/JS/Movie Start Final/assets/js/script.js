@@ -3,7 +3,6 @@ const movielist = document.querySelector('.movielist');
 const movieDetailList = document.querySelector(".movie-details-page");
 let activeMovie = 0;
 
-
 for (let i = 0; i < allMovies.length; i++) {
     movieGernes.innerHTML += `<option value=${i}>${allMovies[i].gerne}</option>`;
 }
@@ -30,9 +29,6 @@ let loadMovieList = function (g) {
     movieDetailPage(0, 0, movielist.firstChild);
 }
 
-
-
-
 let movieDetailPage = function (g, m, n) {
     let movieListGerne = allMovies[g].movies;
 
@@ -53,6 +49,5 @@ let movieDetailPage = function (g, m, n) {
     activeMovie = m;
     n.classList.add('selected-movie');
 }
-
 
 loadMovieList(0);
