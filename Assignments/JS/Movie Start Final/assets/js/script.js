@@ -7,10 +7,12 @@ for (let i = 0; i < allMovies.length; i++) {
     movieGernes.innerHTML += `<option value=${i}>${allMovies[i].gerne}</option>`;
 }
 
+
 let loadMovieList = function (g) {
 
     let allMoviesHTML = '';
     let movieListGerne = allMovies[g].movies;
+
 
     for (let i = 0; i < movieListGerne.length; i++) {
         allMoviesHTML += `<li onclick="movieDetailPage(${g},${i},this)">
