@@ -51,4 +51,5 @@ let movieDetailPage = function (g, m, n) {
     n.classList.add('selected-movie');
 }
 
+
 loadMovieList(0);
