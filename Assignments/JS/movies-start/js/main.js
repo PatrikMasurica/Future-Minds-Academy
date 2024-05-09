@@ -26,6 +26,7 @@ function loadMovieList(g) {
     }
 
     movieList.innerHTML = movieListHTML;
+
 }
 
 function movieFeed(g, m) {
