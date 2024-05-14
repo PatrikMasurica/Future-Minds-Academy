@@ -5,35 +5,35 @@ let movieList = document.querySelector('.movieList');
 let post = document.querySelector('.post');
 
 for (let i = 0; i < topNavigation.length; i++) {
-    navigationList.innerHTML += `<li><a href="#">${topNavigation[i]}</a></li>`
+  navigationList.innerHTML += `<li><a href="#">${topNavigation[i]}</a></li>`
 }
 
 for (let i = 0; i < allMovies.length; i++) {
-    genresList.innerHTML += `<li><a href="javascript:loadMovieList(${i})">${allMovies[i].genres}</a></li>`
+  genresList.innerHTML += `<li><a href="javascript:loadMovieList(${i})">${allMovies[i].genres}</a></li>`
 
 }
 
 for (let i = 0; i < socialMedia.length; i++) {
-    socialMediaIcon.innerHTML += `<li><a href="${socialMedia[i].url}"> <img width="20" src="css/images/${socialMedia[i].icon}" alt=""> ${socialMedia[i].name}</a></li>`
+  socialMediaIcon.innerHTML += `<li><a href="${socialMedia[i].url}"> <img width="20" src="css/images/${socialMedia[i].icon}" alt=""> ${socialMedia[i].name}</a></li>`
 }
 
 function loadMovieList(g) {
-    let movieListHTML = '';
-    let movieListGenre = allMovies[g].movies;
+  let movieListHTML = '';
+  let movieListGenre = allMovies[g].movies;
 
-    for (let i = 0; i < movieListGenre.length; i++) {
-        movieListHTML += `<li><a href="javascript:movieFeed(${g},${i})">${movieListGenre[i].title} <strong>${movieListGenre[i].length} mins</strong></a></li>`
-    }
+  for (let i = 0; i < movieListGenre.length; i++) {
+    movieListHTML += `<li><a href="javascript:movieFeed(${g},${i})">${movieListGenre[i].title} <strong>${movieListGenre[i].length} mins</strong></a></li>`
+  }
 
-    movieList.innerHTML = movieListHTML;
+  movieList.innerHTML = movieListHTML;
 
 }
 
 function movieFeed(g, m) {
-    let movieListGenre = allMovies[g].movies;
+  let movieListGenre = allMovies[g].movies;
 
 
-    let thisMovie = ` <header>
+  let thisMovie = ` <header>
         <h2><a href="#"></a></h2>
         <div class="cl">&nbsp;</div>
       </header> <header>
@@ -62,7 +62,7 @@ function movieFeed(g, m) {
             </div>`
 
 
-    post.innerHTML = thisMovie;
+  post.innerHTML = thisMovie;
 }
 
 
