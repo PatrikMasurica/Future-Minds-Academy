@@ -1,6 +1,6 @@
 export default function Nav(props) {
     return (
-        <div className="container-fixed container-res gap-4">
+        <div className="container-fixed container-res">
             <header className="row align-center" />
             <div className="col" />
             <nav className="navbar gap-2">
