@@ -1,4 +1,4 @@
-export default function Stats() {
+export default function Stats(props) {
     return (
         <div class="container-fixed container-res gap-4">
             <div class="wrapper-full">
@@ -7,19 +7,19 @@ export default function Stats() {
                         <div class="card">
                             <div class="card-inner">
                                 <div class="card-items">
-                                    <span class="card-item">540+</span>
+                                    <span class="card-item">{props.happyClients}+</span>
                                     <span class="card-subtitle">Happy clients</span>
                                 </div>
                                 <div class="card-items">
-                                    <span class="card-item">1240+</span>
+                                    <span class="card-item">{props.projectsCompleted}+</span>
                                     <span class="card-subtitle">Projects completed</span>
                                 </div>
                                 <div class="card-items">
-                                    <span class="card-item">30+</span>
+                                    <span class="card-item">{props.ftSpecialists}+</span>
                                     <span class="card-subtitle">Full time specialists</span>
                                 </div>
                                 <div class="card-items">
-                                    <span class="card-item">15+</span>
+                                    <span class="card-item">{props.awards}+</span>
                                     <span class="card-subtitle">Awards won</span>
                                 </div>
                             </div>

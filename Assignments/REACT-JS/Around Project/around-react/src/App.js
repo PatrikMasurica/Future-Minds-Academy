@@ -14,7 +14,11 @@ function App() {
         title='The effective solutions for your business'
         subtitle='We are a team who creates marketing strategies for B2B and B2C companies'
       />
-      <Stats />
+      <Stats
+        happyClients='540'
+        projectsCompleted='1240'
+        ftSpecialists='30'
+        awards='15' />
     </div>
   );
 }
