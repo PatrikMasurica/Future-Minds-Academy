@@ -1,3 +1,9 @@
+import fb from '../assets/images/fb.png';
+import tw from '../assets/images/tw.png';
+import insta from '../assets/images/insta.png';
+import ln from '../assets/images/ln.png';
+
+
 export default function Footer() {
     return (
         <footer className="footer-info-protofolio ">
@@ -9,10 +15,10 @@ export default function Footer() {
                     <p>© Copyright 2021. Sassio</p>
                 </span>
                 <span className="right-side">
-                    <img src="assets/images/fb.png" alt="" />
-                    <img src="assets/images/tw.png" alt="" />
-                    <img src="assets/images/insta.png" alt="" />
-                    <img src="assets/images/ln.png" alt="" />
+                    <img src={fb} alt="" />
+                    <img src={tw} alt="" />
+                    <img src={insta} alt="" />
+                    <img src={ln} alt="" />
                 </span>
             </div>
         </footer>

@@ -1,3 +1,4 @@
+
 export default function SimplePricing() {
     return (
         <div className="simple-pricing m-1 p-1">

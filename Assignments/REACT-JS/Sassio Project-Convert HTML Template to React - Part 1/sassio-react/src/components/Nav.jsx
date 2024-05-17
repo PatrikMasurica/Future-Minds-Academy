@@ -1,8 +1,10 @@
+import logo from '../assets/images/logo.png';
+
 export default function Nav() {
     return (
         <header className="header row" id="top">
             <div className="col logo-col">
-                <img src="assets/images/logo.png" alt="Your Image" />
+                <img src={logo} alt="Your logo" />
             </div>
             <button className="btn-white duplicate">Join</button>
             <div className="hamburger" tabindex="0">

@@ -1,46 +1,52 @@
-export default function PowerfulFeatures() {
+import laptop from '../assets/images/laptop.png';
+import pencil from '../assets/images/pencil.png';
+import group from '../assets/images/group.png';
+import mockup from '../assets/images/mockup.png';
+import pattern from '../assets/images/pattern-bg.png';
+
+export default function PowerfulFeatures(props) {
     return (
         <div className="powerful-features">
             <div className="col-1 p-2 text-center">
-                <button className="speciale-1 just-start">OUR FEARURES</button><br />
-                <h1 className="dark title">Powerful Features</h1>
+                <button className="speciale-1 just-start">{props.btnDscp}</button><br />
+                <h1 className="dark title">{props.title}</h1>
                 <br />
             </div>
             <div className="row features-info  align-center">
                 <div className="col features">
                     <div className="row different">
                         <div className="col features-img">
-                            <img src="assets/images/laptop.png" alt="" />
+                            <img src={laptop} alt="Laptop" />
                         </div>
                         <div className="col-4">
-                            <h3 className="dark">Theme Made Easy</h3><br />
-                            <p>Our astonishing style structure makes your customization process a breeze</p>
+                            <h3 className="dark">{props.firstSubtitle}</h3><br />
+                            <p>{props.firstDscp}</p>
                         </div>
                     </div>
                     <br />
                     <div className="row  different">
                         <div className="col features-img">
-                            <img src="assets/images/pencil.png" alt="" />
+                            <img src={pencil} alt="" />
                         </div>
                         <div className="col-4">
-                            <h3 className="dark">Powerful Design</h3><br />
-                            <p>With ready-to-use content you'll deploy your implementation in no time</p>
+                            <h3 className="dark">{props.secondSubtitle}</h3><br />
+                            <p>{props.secondDscp}</p>
                         </div>
                     </div>
                     <br />
                     <div className="row different">
                         <div className="col features-img">
-                            <img src="assets/images/group.png" alt="" />
+                            <img src={group} alt="" />
                         </div>
                         <div className="col-4">
-                            <h3 className="dark">Creative Content</h3><br />
-                            <p>Repetitive styles all across the web? Nevermind that! Shine with unique styles</p>
+                            <h3 className="dark">{props.thirdSubtitle}</h3><br />
+                            <p>{props.thirdDscp}</p>
                         </div>
                     </div>
                 </div>
                 <div className="col-1 picture">
-                    <img src="assets/images/mockup.png" className="powerful-img" />
-                    <img src="assets/images/pattern-bg.png" alt="pattern" className="pattern-img-power" />
+                    <img src={mockup} className="powerful-img" />
+                    <img src={pattern} alt="pattern" className="pattern-img-power" />
                 </div>
             </div>
         </div>

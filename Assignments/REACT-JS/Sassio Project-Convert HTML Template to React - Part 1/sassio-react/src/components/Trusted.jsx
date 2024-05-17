@@ -1,25 +1,32 @@
-export default function Trusted() {
+import amazon from '../assets/images/amazon.png';
+import amd from '../assets/images/amd.png';
+import cisco from '../assets/images/cisco.png';
+import dropcam from '../assets/images/dropcam.png';
+import logitech from '../assets/images/logitech.png';
+import spotify from '../assets/images/spotify.png';
+
+export default function Trusted(props) {
     return (
         <div className="trusted-by text-center p-4">
-            <p>Trusted by the world’s best</p>
+            <p>{props.title}</p>
             <div className="row">
                 <div className="col m-5">
-                    <img src="assets/images/amazon.png" />
+                    <img src={amazon} />
                 </div>
                 <div className="col m-5">
-                    <img src="assets/images/amd.png" />
+                    <img src={amd} />
                 </div>
                 <div className="col m-5">
-                    <img src="assets/images/cisco.png" />
+                    <img src={cisco} />
                 </div>
                 <div className="col m-5">
-                    <img src="assets/images/dropcam.png" />
+                    <img src={dropcam} />
                 </div>
                 <div className="col m-5">
-                    <img src="assets/images/logitech.png" />
+                    <img src={logitech} />
                 </div>
                 <div className="col m-5">
-                    <img src="assets/images/spotify.png" />
+                    <img src={spotify} />
                 </div>
             </div>
         </div>

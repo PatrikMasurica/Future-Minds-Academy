@@ -1,3 +1,7 @@
+import market from '../assets/images/market.png';
+import portfolio from '../assets/images/protofolio.png';
+import trading from '../assets/images/trading.png';
+
 export default function AppScr() {
     return (
         <div className="row p-2">
@@ -8,9 +12,9 @@ export default function AppScr() {
                     <br />
                 </div>
                 <div className="col-1 apps">
-                    <img src="assets/images/market.png" alt="" className="screen market" />
-                    <img src="assets/images/protofolio.png" alt="" className="screen pro" />
-                    <img src="assets/images/trading.png" alt="" className="screen trading" />
+                    <img src={market} alt="" className="screen market" />
+                    <img src={portfolio} alt="" className="screen pro" />
+                    <img src={trading} alt="" className="screen trading" />
                 </div>
                 <div className="bullet-container">
                     <div className="bullet"></div>

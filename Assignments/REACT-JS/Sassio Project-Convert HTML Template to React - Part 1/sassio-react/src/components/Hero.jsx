@@ -1,40 +1,42 @@
-export default function Hero() {
+import appleIcon from '../assets/images/icone_apple.png';
+import androidIcon from '../assets/images/icone_android.png';
+import bgImage from '../assets/images/bg.png';
+import phones from '../assets/images/phones.png';
+import patterns from '../assets/images/pattern-bg.png';
+
+
+export default function Hero(props) {
     return (
         <div className="hero row">
             <div className="col text-left p-5 m-5 intro">
-                <button className="btn-primary speciale">On sale for a limited time</button>
-                <h1 className="display-1">Premium Startup & App</h1>
-                <h1 className="display-2"> Landing Page</h1>
-                <p className="hero-paragraf">Besides its beautiful design. Sassio is an incredibly rich core<br /> framework for
-                    you to showcase your
-                    App.
-                </p>
-                <div className="col img-fixed">
-                    <img src="./images/app_btn.png" alt="apple" />
-                </div>
+                <button className="btn-primary speciale">{props.btnDscp}</button>
+                <h1 className="display-1">{props.title}</h1>
+                <h1 className="display-2"> {props.secondTitle}</h1>
+                <p className="hero-paragraf">{props.subtitle} <br /> {props.subtitleConcat}</p>
+
                 <div className="buttons">
                     <div className="button-container">
-                        <img className="button-image" src="assets/images/icone_apple.png" alt="Apple Image" />
+                        <img className="button-image" src={appleIcon} alt="Apple" />
                         <span className="seperator"></span>
                         <div className="button-text">
-                            <span className="button-download">Download on the</span>
-                            <span className="bold-text">Apple Store</span>
+                            <span className="button-download">{props.firstBtnTxt}</span>
+                            <span className="bold-text">{props.firstBtnStore}</span>
                         </div>
                     </div>
                     <div className="button-container">
-                        <img className="button-image" src="assets/images/icone_android.png" alt="Apple Image" />
+                        <img className="button-image" src={androidIcon} alt="Android " />
                         <span className="seperator"></span>
                         <div className="button-text">
-                            <span className="button-download">Get it on</span>
-                            <span className="bold-text">Google Play</span>
+                            <span className="button-download">{props.secondBtnTxt}</span>
+                            <span className="bold-text">{props.secondBtnStore}</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="assets/images/bg.png" alt="Background Image" className="bg-img" />
+            <img src={bgImage} alt="Background " className="bg-img" />
             <div className="col pictures">
-                <img src="assets/images/phones.png" alt="Phones Image" className="img-fluid" />
-                <img src="assets/images/pattern-bg.png" alt="pattern" className="pattern-img" />
+                <img src={phones} alt="Phones " className="img-fluid" />
+                <img src={patterns} alt="pattern" className="pattern-img" />
             </div>
         </div>
     )
