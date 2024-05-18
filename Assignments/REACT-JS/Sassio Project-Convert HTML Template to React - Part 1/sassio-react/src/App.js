@@ -45,18 +45,7 @@ function App() {
         firstOption="Real time activity"
         firstSubtitle="Get instant insight on what's happening in your business."
         secondSubtitle='It uses a dictionary of the over 200 Latin words,'
-        secondOption='Instant deploy'
-        thirdOption='Easy integrations'
-        fourthOption='Perfect UI/UX'
-        benefitTitle='Tons of benefit'
-        benefitFirstOp='Development'
-        benefitSecondOp='Web Design'
-        benefitThirdOp='Do Magic'
-        benefitFourthOp='Save Time'
-        benefitFifthOp='App Builder'
-        benefitSixthOp='Dashboard'
-        benefitSeventhOp='Feedback'
-        secondBtnDscp='FREE TRIAL'
+
       />
       <PathToSucces
         btnDscp='WE ARE YOUR ONLY'
@@ -93,10 +82,23 @@ function App() {
         followers='14941'
         newUsers='1254'
       />
-      <AppScr />
-      <SimplePricing />
-      <FaqSection />
-      <DownApp />
+      <AppScr
+        title='App ScreenShot'
+      />
+      <SimplePricing
+        title='Simple Pricing'
+      />
+      <FaqSection
+        title='Frequently asked questions.'
+        description='When you buy Sassio, you get all you see in the demo but the images. We include SASS files for
+        styling, complete JS files with comments, all HTML variations. Besides, we include all mobile
+        PSD
+        mockups.'
+      />
+      <DownApp
+        title='Download the App'
+        description='New features. New appearance. No risk and credit card required.'
+      />
       <Footer />
       <ScrollToTop />
     </div>

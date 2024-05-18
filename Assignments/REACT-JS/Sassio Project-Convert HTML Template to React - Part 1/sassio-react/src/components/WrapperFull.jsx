@@ -56,7 +56,7 @@ export default function WrapperFull(props) {
                     <div className="col-1 m-3 p-3 benefit-info">
                         <div className="col benefit-header text-left ">
                             <button className="btn-primary speciale-1">{props.btnDscp}</button>
-                            <h3 className="display-1">{props.benefitTitle}</h3>
+                            <h3 className="display-1">Tons of benefit</h3>
                         </div>
                         <div className="benefits">
                             <ul>
@@ -65,7 +65,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitFirstOp}</span>
+                                        <span className="dark">Development</span>
                                     </div>
                                 </li>
                                 <li>
@@ -73,7 +73,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitSecondOp}</span>
+                                        <span className="dark">Web Design</span>
                                     </div>
                                 </li>
                                 <li>
@@ -81,7 +81,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitThirdOp}</span>
+                                        <span className="dark">Do Magic</span>
                                     </div>
                                 </li>
                                 <li>
@@ -89,7 +89,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitFourthOp}</span>
+                                        <span className="dark">Save Time</span>
                                     </div>
                                 </li>
                             </ul>
@@ -99,7 +99,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitFifthOp}</span>
+                                        <span className="dark">App Builder</span>
                                     </div>
                                 </li>
                                 <li>
@@ -107,7 +107,7 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitSixthOp}</span>
+                                        <span className="dark">Dashboard</span>
                                     </div>
                                 </li>
                                 <li>
@@ -115,12 +115,12 @@ export default function WrapperFull(props) {
                                         <div className="icon-container">
                                             <span className="material-symbols-outlined">check</span>
                                         </div>
-                                        <span className="dark">{props.benefitSeventhOp}</span>
+                                        <span className="dark">Feedback</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <button className="btn-free just-start">{props.secondBtnDscp}</button>
+                        <button className="btn-free just-start">FREE TRIAL</button>
                     </div>
                     <div className="col-1 m-2 p-2 benefit-img">
                         <img src={benefit} alt="benefits" className="benefit-img" />

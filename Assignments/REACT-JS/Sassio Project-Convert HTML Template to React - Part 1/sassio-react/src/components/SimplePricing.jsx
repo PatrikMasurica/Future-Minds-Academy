@@ -1,10 +1,10 @@
 
-export default function SimplePricing() {
+export default function SimplePricing(props) {
     return (
         <div className="simple-pricing m-1 p-1">
             <div className="col-1 text-center">
                 <button className="speciale-1 plans">PLANS</button><br />
-                <h1 className="display-1">Simple Pricing</h1>
+                <h1 className="display-1">{props.title}</h1>
             </div>
             <div className="col text-center m-5">
                 <span className="modify">Modify</span>

@@ -1,9 +1,9 @@
-export default function FaqSection() {
+export default function FaqSection(props) {
     return (
         <div className="row faq-section m-10 gap-9">
             <div className="col-1">
                 <button className="speciale-1">GET HELP (HELP CENTER)</button>
-                <h2 className="faq">Frequently asked questions.</h2>
+                <h2 className="faq">{props.title}</h2>
             </div>
             <div className="col-1">
                 <div className="faq-item">
@@ -11,11 +11,7 @@ export default function FaqSection() {
                     <span className="dark">What does the package include?</span>
                 </div>
                 <div className="faq-item-content">
-                    <p>When you buy Sassio, you get all you see in the demo but the images. We include SASS files for
-                        styling, complete JS files with comments, all HTML variations. Besides, we include all mobile
-                        PSD
-                        mockups.
-                    </p>
+                    <p>{props.description}</p>
                 </div>
                 <div className="faq-item">
                     <span className="material-symbols-outlined">add</span>
