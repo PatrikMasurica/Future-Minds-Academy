@@ -18,9 +18,11 @@ import DownApp from './components/DownApp';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="container-fixed">
+
       <Nav />
       <Hero
         btnDscp='On sale for a limited time'
@@ -102,6 +104,7 @@ function App() {
       <Footer />
       <ScrollToTop />
     </div>
+
   );
 }
 
