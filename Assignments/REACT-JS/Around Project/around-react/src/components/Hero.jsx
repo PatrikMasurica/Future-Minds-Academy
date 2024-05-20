@@ -1,6 +1,6 @@
 export default function Hero(props) {
     return (
-        <div className="container-fixed container-res gap-4">
+        <div>
             <div className="row hero gap-3">
                 <div className="wrapper-lg">
                     <div className="col-2">
