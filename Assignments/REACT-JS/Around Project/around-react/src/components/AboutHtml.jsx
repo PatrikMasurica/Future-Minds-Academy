@@ -1,3 +1,5 @@
+import '../css/about-us.css';
+
 export default function AboutHtml(props) {
     return (
         <div>

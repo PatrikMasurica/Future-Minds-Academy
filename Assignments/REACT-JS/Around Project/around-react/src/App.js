@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './css/fma-general.css';
 import './css/fma-responsive.css';
 import './css/homeStyle.css';
+import './css/about-us.css';
 
 
 import Home from './pages/Home';
