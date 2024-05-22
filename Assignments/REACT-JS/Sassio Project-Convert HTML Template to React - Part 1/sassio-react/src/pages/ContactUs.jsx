@@ -1,4 +1,4 @@
-
+import Nav from '../components/Nav';
 import FaqSection from '../components/FaqSection';
 import DownApp from '../components/DownApp';
 
@@ -8,7 +8,7 @@ export default function ContacUs() {
         <div className="App">
             <div className='container-fixed'>
 
-
+                <Nav />
                 <FaqSection
                     title='Frequently asked questions.'
                     description='When you buy Sassio, you get all you see in the demo but the images. We include SASS files for

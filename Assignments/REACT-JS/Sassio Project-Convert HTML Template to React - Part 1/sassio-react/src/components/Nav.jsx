@@ -22,12 +22,12 @@ export default function Nav() {
                 </div>
             </div>
             <div className="col navigation-col">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="portofolio.html">Portfolio</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="blog.html">Blog</a>
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/services">Services</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/blog">Blog</a>
             </div>
             <div className="col btn-primary">
                 <button className="btn-white">Join</button>

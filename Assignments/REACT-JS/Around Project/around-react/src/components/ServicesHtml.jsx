@@ -1,3 +1,5 @@
+import '../css/services.css';
+
 export default function ServicesHtml() {
     return (
 
@@ -7,13 +9,13 @@ export default function ServicesHtml() {
                     <nav className="navbar gap-2">
                         <img src="assets/images/logo.svg" alt="Around-Logo" className="navbar-logo" />
                         <ul className="navbar-menu remove-tablet">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="services.html" className="active">Services</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                            <li><a href="contact-us.html">Contact us</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="/services" className="active">Services</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/blog-details">Blog Details</a></li>
+                            <li><a href="/contact-us">Contact us</a></li>
                         </ul>
                         <div className="navbar-button remove-tablet">
                             <img src="assets/images/sun.png" alt="" />
