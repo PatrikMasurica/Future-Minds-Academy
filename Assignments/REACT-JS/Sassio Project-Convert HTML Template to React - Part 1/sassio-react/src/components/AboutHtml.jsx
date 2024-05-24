@@ -1,9 +1,26 @@
+import sketch from '../assets/images/sketch.png';
+import logo from '../assets/images/logo.png';
+import background from '../assets/images/bg.png';
+import color from '../assets/images/color.png';
+import double from '../assets/images/double.png';
+import timer from '../assets/images/timer.png';
+import cloudStorage from '../assets/images/cloud-storage.png';
+import touch from '../assets/images/touch.png';
+import pen from '../assets/images/pen-tool.png'
+import person from '../assets/images/person.png';
+import amazon from '../assets/images/amazon.png';
+import amd from '../assets/images/amd.png';
+import cisco from '../assets/images/cisco.png';
+import logitech from '../assets/images/logitech.png';
+import spotify from '../assets/images/spotify.png';
+import dropcam from '../assets/images/dropcam.png';
+
 export default function AboutHtml() {
     return (
         <div className="container-fluid wrapper-full about">
             <header className="header wrapper-xl row" id="top">
                 <div className="col logo-col">
-                    <img src="assets/images/logo.png" alt="Your Image" />
+                    <img src={logo} alt="Your" />
                 </div>
                 <button className="btn-white duplicate">Join</button>
                 <div className="hamburger-about" tabindex="0">
@@ -35,7 +52,7 @@ export default function AboutHtml() {
             </header>
             <div className="wrapper-xl text-center">
                 <div className="about-section">
-                    <img src="assets/images/bg.png" alt="Background Image" className="bg-img about" />
+                    <img src={background} alt="Background Image" className="bg-img about" />
                     <h1 className="dark">About us</h1>
                     <br />
                     <p>
@@ -57,7 +74,7 @@ export default function AboutHtml() {
                         <div className="row">
                             <div className="col-5 m-1">
                                 <div className="back-pink p-1">
-                                    <img src="assets/images/sketch.png" alt="sketch" />
+                                    <img src={sketch} alt="sketch" />
                                 </div>
                             </div>
                             <div className="col-5 missions">
@@ -69,7 +86,7 @@ export default function AboutHtml() {
                         <div className="row">
                             <div className="col-5 m-1">
                                 <div className="back-blue p-1">
-                                    <img src="assets/images/color.png" alt="sketch" />
+                                    <img src={color} alt="sketch" />
                                 </div>
                             </div>
                             <div className="col-5 missions">
@@ -80,7 +97,7 @@ export default function AboutHtml() {
                         </div>
                     </div>
                     <div className="col-5">
-                        <img src="assets/images/double.png" alt="images of missions" className="img-missions" />
+                        <img src={double} alt="images of missions" className="img-missions" />
                     </div>
                 </div>
             </div>
@@ -111,7 +128,7 @@ export default function AboutHtml() {
                 <div className="secure-section">
                     <div className="row all-shadow development-info">
                         <div className="col-5 m-2 p-2">
-                            <img src="assets/images/timer.png" alt="timer-picture" />
+                            <img src={timer} alt="timer-picture" />
                         </div>
                         <span className="col-5 m-1 text-left">
                             <h3 className="dark">Real time activity</h3><br />
@@ -123,7 +140,7 @@ export default function AboutHtml() {
                     </div>
                     <div className="row all-shadow development-info">
                         <div className="col-5  m-2 p-2">
-                            <img src="assets/images/cloud-storage.png" alt="cloud-storage" />
+                            <img src={cloudStorage} alt="cloud-storage" />
                         </div>
                         <span className="col-5 m-1 text-left">
                             <h3 className="dark">Instant deploy</h3><br />
@@ -136,7 +153,7 @@ export default function AboutHtml() {
                     </div>
                     <div className="row all-shadow development-info">
                         <div className="col-5  m-2 p-2">
-                            <img src="assets/images/touch.png" alt="touch-screen" />
+                            <img src={touch} alt="touch-screen" />
                         </div>
                         <span className="col-5 m-1 text-left">
                             <h3 className="dark">Easy integrations</h3><br />
@@ -149,7 +166,7 @@ export default function AboutHtml() {
                     </div>
                     <div className="row all-shadow development-info">
                         <div className="col-5  m-2 p-2">
-                            <img src="assets/images/pen-tool.png" alt="pen-tool" />
+                            <img src={pen} alt="pen-tool" />
                         </div>
                         <span className="col-5 m-1 text-left">
                             <h3 className="dark">Perfect UI/UX</h3><br />
@@ -198,7 +215,7 @@ export default function AboutHtml() {
                     <div className="creative-section">
                         <div className=" persons-info">
                             <div className="persons-img">
-                                <img src="assets/images/person.png" />
+                                <img src={person} />
                             </div>
                             <div className="person-details">
                                 <p className="dark">Albert Flores</p>
@@ -207,7 +224,7 @@ export default function AboutHtml() {
                         </div>
                         <div className=" persons-info">
                             <div className="persons-img">
-                                <img src="assets/images/person.png" />
+                                <img src={person} />
                             </div>
                             <div className="person-details">
                                 <p className="dark">Albert Flores</p>
@@ -216,7 +233,7 @@ export default function AboutHtml() {
                         </div>
                         <div className=" persons-info">
                             <div className="persons-img">
-                                <img src="assets/images/person.png" />
+                                <img src={person} />
                             </div>
                             <div className="person-details">
                                 <p className="dark">Albert Flores</p>
@@ -225,7 +242,7 @@ export default function AboutHtml() {
                         </div>
                         <div className=" persons-info">
                             <div className="persons-img">
-                                <img src="assets/images/person.png" />
+                                <img src={person} />
                             </div>
                             <div className="person-details">
                                 <p className="dark">Albert Flores</p>
@@ -247,43 +264,26 @@ export default function AboutHtml() {
                 <h1 className="creative-header">We work with the best brands</h1><br />
                 <div className="row brands">
                     <div className="col-end m-5">
-                        <img src="assets/images/amazon.png" />
+                        <img src={amazon} />
                     </div>
                     <div className="col-end m-5">
-                        <img src="assets/images/amd.png" />
+                        <img src={amd} />
                     </div>
                     <div className="col-end m-5">
-                        <img src="assets/images/cisco.png" />
+                        <img src={cisco} />
                     </div>
                     <div className="col-end m-5">
-                        <img src="assets/images/dropcam.png" />
+                        <img src={dropcam} />
                     </div>
                     <div className="col-end m-5">
-                        <img src="assets/images/logitech.png" />
+                        <img src={logitech} />
                     </div>
                     <div className="col-end m-5">
-                        <img src="assets/images/spotify.png" />
+                        <img src={spotify} />
                     </div>
                 </div>
             </div>
-            <div className="wrapper-lg">
-                <footer className="footer-info-protofolio ">
-                    <div className="row">
-                        <span className="left-side">
-                            <p>Privacy & Cookie Policy | Terms of Service</p>
-                        </span>
-                        <span className="middle-side">
-                            <p>© Copyright 2021. Sassio</p>
-                        </span>
-                        <span className="right-side">
-                            <img src="assets/images/fb.png" alt="" />
-                            <img src="assets/images/tw.png" alt="" />
-                            <img src="assets/images/insta.png" alt="" />
-                            <img src="assets/images/ln.png" alt="" />
-                        </span>
-                    </div>
-                </footer>
-            </div>
+
 
         </div>
     )

@@ -6,6 +6,7 @@ import ln from '../assets/images/ln.png';
 
 export default function Footer() {
     return (
+
         <footer className="footer-info-protofolio ">
             <div className="row">
                 <span className="left-side">
@@ -22,5 +23,6 @@ export default function Footer() {
                 </span>
             </div>
         </footer>
+
     )
 }
