@@ -14,6 +14,10 @@ import cisco from '../assets/images/cisco.png';
 import logitech from '../assets/images/logitech.png';
 import spotify from '../assets/images/spotify.png';
 import dropcam from '../assets/images/dropcam.png';
+import fb from '../assets/images/fb.png';
+import tw from '../assets/images/tw.png';
+import ln from '../assets/images/ln.png';
+import insta from '../assets/images/insta.png';
 
 export default function AboutHtml() {
     return (
@@ -282,6 +286,25 @@ export default function AboutHtml() {
                         <img src={spotify} />
                     </div>
                 </div>
+            </div>
+            <div className="wrapper-lg">
+
+                <footer className="footer-info-protofolio ">
+                    <div className="row">
+                        <span className="left-side">
+                            <p>Privacy & Cookie Policy | Terms of Service</p>
+                        </span>
+                        <span className="middle-side">
+                            <p>© Copyright 2021. Sassio</p>
+                        </span>
+                        <span className="right-side">
+                            <img src={fb} alt="" />
+                            <img src={tw} alt="" />
+                            <img src={insta} alt="" />
+                            <img src={ln} alt="" />
+                        </span>
+                    </div>
+                </footer>
             </div>
 
 
