@@ -6,7 +6,9 @@ export default function Portfolio() {
     return (
         <div className="App">
 
+
             <PortfolioHtml />
+
 
         </div>
 
