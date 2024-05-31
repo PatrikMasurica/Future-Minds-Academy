@@ -11,6 +11,7 @@ export default function Nav() {
 
     return (
 
+
         <header class="row align-center">
             <div class="col">
                 <nav class="navbar gap-2">

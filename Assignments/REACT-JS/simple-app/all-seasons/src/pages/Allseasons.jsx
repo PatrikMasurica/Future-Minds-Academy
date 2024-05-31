@@ -1,16 +1,12 @@
 import Nav from "../components/Nav";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import AllSeasonsHero from "../components/AllSeasonsHero";
 
 export default function Allseasons() {
     return (
         <div className="container-fixed">
             <Nav />
-            <Hero
-                title='All Seasons'
-                photo='fall.png'
-
-            />
+            <AllSeasonsHero />
             <Footer />
         </div>
     )
