@@ -16,6 +16,7 @@ export default function QuizTimer() {
         }, 100);
 
 
+
         return () => clearInterval(timeInt);
     }, []);
 
