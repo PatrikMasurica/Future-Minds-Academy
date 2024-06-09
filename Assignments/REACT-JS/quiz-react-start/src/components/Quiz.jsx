@@ -19,6 +19,7 @@ export default function Quiz() {
         )
     }
 
+
     if (isQuizComplete) {
         return (
             <div id="summary">
