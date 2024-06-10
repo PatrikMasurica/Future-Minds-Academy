@@ -12,6 +12,7 @@ export default function Quiz() {
     const isQuizComplete = activeQuestionIndex === Questions.length;
 
     function handleAnswer(selectedAnswer) {
+
         setUserAnswers(
             (previousAnswer) => {
                 return [...previousAnswer, selectedAnswer]
