@@ -14,6 +14,7 @@ const result_box = document.querySelector('.result_box');
 const score_text = document.querySelector('.score_text');
 const restart = document.querySelector('#restart');
 
+
 let timerInterval;
 
 let points = 0;
