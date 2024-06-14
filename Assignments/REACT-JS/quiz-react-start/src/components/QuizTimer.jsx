@@ -25,6 +25,7 @@ export default function QuestionTimer({ timeout, onTimeout }) {
             });
         }, 100);
 
+
         return () => {
             clearInterval(interval);
         };
