@@ -35,19 +35,14 @@ function App() {
       if (filterType === 'yesterday') {
         const yesterday = new Date();
         yesterday.setDate(today.getDate() - 1);
-        return taskDate.toDateString() === new Date(today.setDate(today.getDate() - 1)).toDateString();
+        return taskDate.toDateString() === yesterday.toDateString();
       } else if (filterType === 'today') {
         return taskDate.toDateString() === new Date().toDateString();
       } else if (filterType === 'tomorrow') {
         const tomorrow = new Date();
         tomorrow.setDate(today.getDate() + 1);
         return taskDate.toDateString() === tomorrow.toDateString();
-      } else if (filterType === 'all') {
-        const all = new Date();
-        all.setDate(today.getDate());
-        return taskDate.toDateString() === new Date(today.setDate(today.getDate() - 1)).toDateString();
-      }
-      else {
+      } else {
         return true;
       }
 
