@@ -11,6 +11,7 @@ export default function ToDoList({ tasks, removeTask, filterTasks }) {
                 <button onClick={() => filterTasks('all')}>All</button>
             </div>
 
+
             <ul>
                 {tasks.map((task, index) => (
                     <ToDoItem key={index} task={task} index={index} removeTask={removeTask} />
