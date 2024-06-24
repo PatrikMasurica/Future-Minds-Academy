@@ -17,6 +17,7 @@ const ToDoForm = ({ addTask }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+
             <input
                 type="text"
                 value={task}
