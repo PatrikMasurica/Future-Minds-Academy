@@ -10,16 +10,23 @@
 </head>
 
 <body>
-    <div class="container-fixed">
-        <h1 class="text-center m-5 card-header">To Do App</h1>
-        <div class="m-5">
-            <form class="">
-                <input type="text" placeholder="Enter your task here..." />
-                <input type="date">
-                <input type="time">
-                <input type="color">
-                <button class="btn" type="submit">Add</button>
-            </form>
+    <div class="container-fixed wrapper-full">
+        <h1 class="row m-5 just-center bottom-shadow p-2">To Do App</h1>
+        <div class="row m-5 p-2 gap-10 just-start">
+            <div class="form-container p-3">
+                <form class="col p-2">
+                    <label>Type your task down below:</label>
+                    <input type="text" placeholder="Enter your task here..." />
+                    <input type="date">
+                    <input type="time">
+                    <input type="color">
+                    <button class="btn" type="submit">Add</button>
+                </form>
+            </div>
+            <div class="col left-shadow p-4">
+                <h1>Tasks:</h1>
+                <hr>
+            </div>
         </div>
     </div>
 </body>
