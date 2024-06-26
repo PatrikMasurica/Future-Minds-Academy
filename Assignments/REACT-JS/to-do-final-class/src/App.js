@@ -23,14 +23,14 @@ function App() {
   };
 
   const toggleCompleted = (index) => {
-    const newTasks = tasks.map((task, i) => 
+    const newTasks = tasks.map((task, i) =>
       i === index ? { ...task, isCompleted: !task.isCompleted } : task
     );
     setTasks(newTasks);
   };
 
   const updateTask = (index, updatedTask) => {
-    const newTasks = tasks.map((task, i) => 
+    const newTasks = tasks.map((task, i) =>
       i === index ? updatedTask : task
     );
     setTasks(newTasks);
