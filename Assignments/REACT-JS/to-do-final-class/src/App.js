@@ -20,6 +20,7 @@ function App() {
 
   const addTask = (task) => {
     setTasks([...tasks, task]);
+
   };
 
   const toggleCompleted = (index) => {
