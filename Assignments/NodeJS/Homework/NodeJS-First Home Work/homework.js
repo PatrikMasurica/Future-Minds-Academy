@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Define the directory to search in and the file name
-const directoryPath = path.join(__dirname, 'path-to-your-directory'); // Replace with your directory path
-const fileName = 'example.txt'; // Replace with your file name
+const directoryPath = path.join(__dirname, 'C:\Users\HP-650 G1\OneDrive\Documents\Future-Minds-Academy\Assignments\NodeJS\Homework\NodeJS-First Home Work'); // Replace with your directory path
+const fileName = 'homework.js'; // Replace with your file name
 
 // Build the full path to the file
 const filePath = path.join(directoryPath, fileName);
