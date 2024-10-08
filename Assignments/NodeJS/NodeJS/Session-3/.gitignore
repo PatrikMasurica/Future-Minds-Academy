@@ -1,0 +1,64 @@
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Dependency directories
+.bower_components/
+jspm_packages/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment variables
+.env
+
+# Compiled files
+*.class
+*.o
+*.out
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# Miscellaneous
+*.swp
+*.bak
+*.orig
+*.rej
+*.lock
+*.log
+*.pid
+
+# Git Hooks
+.git/hooks/
