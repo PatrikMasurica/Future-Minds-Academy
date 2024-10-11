@@ -1,0 +1,78 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules directory for Node.js projects
+node_modules/
+
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore Ruby Gems
+*.gem
+*.rbc
+.bundle/
+log/
+tmp/
+coverage/
+spec/reports/
+test/tmp/
+test/version_tmp/
+
+# Ignore Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore .NET build directories and files
+bin/
+obj/
+*.pdb
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.o
+*.out
+*.exe
+
+# Ignore IDE and editor specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore package managers
+yarn.lock
+package-lock.json
+
+# Ignore macOS folder attributes
+.AppleDouble
+.LSOverride
+
+# Ignore archives (compressed files)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.tgz
+
+# Ignore database files
+*.sqlite3
+
+# Ignore other unwanted file types
+*.swp
+*.bak
+*.tmp
