@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-    max-width: 250px;
+    max-width: 450px;
     border: 1px solid rgb(228, 228, 228);
     margin: auto;
     margin-top: 4rem;
@@ -195,4 +195,11 @@ input[type="password"] {
 
 .next-btn:hover {
     background-color: #1864c9;
+}
+
+
+.linqet {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
 }

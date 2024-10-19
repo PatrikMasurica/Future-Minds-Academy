@@ -106,6 +106,12 @@ form .create-account:hover {
     cursor: pointer;
 }
 
+.linqet {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
 /* //.........Media Query.........// */
 
 @media (max-width: 500px) {
