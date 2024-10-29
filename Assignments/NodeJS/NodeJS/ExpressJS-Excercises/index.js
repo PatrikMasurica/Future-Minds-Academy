@@ -44,4 +44,32 @@ app.get('/suppliers/:id/products', (req, res) => {
 
 })
 
+app.post('/products', (req, res) => {
+    let product = req.body;
+    db.products.push(product);
+    res.json(product);
+})
+
+app.delete('/products/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const index = db.products.findIndex(p => p.id === id);
+
+    db.products.splice(index, 1);
+
+    res.write(`Product with ID:${id} has been deleted`);
+    res.end();
+})
+
+
+app.get('/suppliers', (req, res) => {
+    res.json(db.suppliers);
+})
+
+
+app.post('/suppliers', (req, res) => {
+    const supplier = req.body;
+    db.suppliers.push(supplier);
+    res.json(supplier);
+})
+
 app.listen(8585);
