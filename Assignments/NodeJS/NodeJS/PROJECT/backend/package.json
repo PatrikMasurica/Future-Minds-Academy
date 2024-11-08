@@ -1,0 +1,15 @@
+{
+  "name": "bookstore-backend",
+  "version": "1.0.0",
+  "description": "a book store project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrik Masurica",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.9.0",
+    "express": "^4.21.1"
+  }
+}
