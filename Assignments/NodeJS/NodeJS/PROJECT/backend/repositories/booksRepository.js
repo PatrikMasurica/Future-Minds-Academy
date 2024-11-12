@@ -219,13 +219,12 @@ exports.createBook = (book) => {
 };
 
 exports.editBook = (id, book) => {
-  let oldBook = this.getBookById(id);
+  const index = books.findIndex((b) => b.id === id);
 
-  if (oldBook) {
-    oldBook.title = { id, ...book };
-    return oldBook;
+  if (index !== -1) {
+    books[index] = { ...books[index], ...book };
+    return books[index];
   }
-
   return null;
 };
 
