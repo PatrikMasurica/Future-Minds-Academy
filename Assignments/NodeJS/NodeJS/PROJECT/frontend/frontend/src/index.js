@@ -5,6 +5,7 @@ import App from "./App";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import BookDetails from "./BookDetails";
+import Login from "./components/Login.";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +15,7 @@ root.render(
         <Route path="/" element={<Navigate to="/books" replace />} />
         <Route path="/books" exact element={<App />} />
         <Route path="/books/:id" element={<BookDetails />} />
-        <Route path="/login" />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
