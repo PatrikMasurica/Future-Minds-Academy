@@ -1,6 +1,7 @@
 const express = require("express");
 const router = require("express").Router();
 const booksRepository = require("../repositories/booksRepository");
+const authMiddleware = require("../middleware/auth");
 
 router.use(express.json());
 
